@@ -399,8 +399,8 @@ filter: grayscale(80%);
     display: flex;
     gap: 2rem;
     position: relative;
-  margin-top: 7.2rem;
-    top: 9rem;
+  margin-top: 11.2rem;
+    top: 4rem;
     margin-left: 27.8rem;
   }
   .links a {
