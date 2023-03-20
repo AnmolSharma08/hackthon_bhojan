@@ -400,7 +400,7 @@ filter: grayscale(80%);
     gap: 2rem;
     position: relative;
   margin-top: 15.5rem;
-    top: 6rem;
+    top: 5rem;
     margin-left: 27.8rem;
   }
   .links a {
@@ -484,7 +484,7 @@ filter: grayscale(80%);
   .connection{
     text-align: right;
     position: absolute;
-    top: 130.4rem;
+    top: 138.4rem;
     left: 33%;
   }
   .connection p{
