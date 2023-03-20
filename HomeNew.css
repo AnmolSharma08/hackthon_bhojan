@@ -484,7 +484,7 @@ filter: grayscale(80%);
   .connection{
     text-align: right;
     position: absolute;
-    top: 149rem;
+    top: 147.5rem;
     left: 33%;
   }
   .connection p{
