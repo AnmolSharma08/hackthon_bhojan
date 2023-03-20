@@ -266,7 +266,7 @@ filter: grayscale(80%);
   .fame h2 {
     position: relative;
     font-size: 4rem;
-    top: 7.9rem;
+    top: 10rem;
     left: 2.4rem;
     font-family: "Oswald", sans-serif;
     margin-left: 2rem;
@@ -297,7 +297,7 @@ filter: grayscale(80%);
     margin-right: 2rem;
     position: relative;
     margin-left: 3.8rem;
-    top: 8.4rem;
+    top: 10.1rem;
 }
   
   .card {
@@ -352,7 +352,7 @@ filter: grayscale(80%);
   .fameINTRO p{  
         position: absolute;
         float: right;
-   top: 82.4rem;
+   top: 86.4rem;
    right: 5rem;
   
    font-family: 'Dosis', sans-serif;
