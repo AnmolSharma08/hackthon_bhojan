@@ -401,7 +401,7 @@ filter: grayscale(80%);
     position: relative;
   margin-top: 15.5rem;
     top: 5rem;
-    margin-left: 27.8rem;
+    margin-left: 30.8rem;
   }
   .links a {
     width: 42px;
@@ -454,7 +454,7 @@ filter: grayscale(80%);
     width: 80%;
     margin: 0 auto;
     position: relative;
-    top: 5.5rem;
+    top: 7.5rem;
     /* specify a height for the container */
     height: 110px;
   }
@@ -474,7 +474,7 @@ filter: grayscale(80%);
     color: rgb(255, 255, 255);
     position: relative;
     left: 52%;
-    bottom:  0.8rem;
+/*     bottom:  0.8rem; */
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 800;
   }
@@ -484,7 +484,7 @@ filter: grayscale(80%);
   .connection{
     text-align: right;
     position: absolute;
-    top: 138.4rem;
+    top: 148.4rem;
     left: 33%;
   }
   .connection p{
