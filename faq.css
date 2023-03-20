@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+
+
+  header::before {
+    background:#686262 no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 250%;
+    z-index: -1;
+    opacity: 0.65;
+  }
+  
+  .wrapper {
+
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    display: flex;
+    height: 3rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    
+    padding: 1rem 1.5rem;
+    /* border-radius: 0.5rem; */
+  }
+  nav img{
+    position: relative;
+    bottom: 1.65rem;
+    height: 5rem;
+    width: 7rem;
+  }
+  nav a {
+    text-decoration: none;
+    color: rgb(255, 248, 248);
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2.5px;
+  }
+  .Faq{
+    margin-left: 2rem;
+  }
+  .Faq h1{
+    font-family: "Oswald", sans-serif;
+    color: white;
+    font-size: 4.5rem;
+    width: 50%;
+    margin-bottom: 1.1rem;
+  }
+  .Faq p{
+    font-size: 1.2rem;
+    color: white;
+    position: relative;
+    bottom: 1.8rem;
+    /* text-align:justify; */
+  }
+
+
+
+
+
+
+  .Faq h1:before,
+.Faq h1:after {
+  content: "";
+  position: absolute;
+  margin-bottom: 29rem;
+  bottom: 0;
+  left: 2rem;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.3s ease;
+}
+
+.Faq h1:hover:before {
+  width: 35%;
+}
+.Faq h1:hover:after {
+  left: 100%;
+  width: 0;
+}
+
+
+
+
+  .questions1 {
+    position: relative;
+    bottom: 2rem;
+  }
+  .questions2{
+    position: relative;
+    bottom: 4rem;
+  }
+  .questions3 {
+    position: relative;
+    bottom: 6rem;
+  }
+  .questions4 {
+    position: relative;
+    bottom: 8rem;
+  }
+  .questions5 {
+    position: relative;
+    bottom: 10rem;
+  }
+  .questions6 {
+    position: relative;
+    bottom: 12rem;
+  }
+  .questions7 {
+    position: relative;
+    bottom: 14rem;
+  }
+  .questions8{
+    position: relative;
+    bottom: 16rem;
+  }
+
+  
+  .faqimage::before {
+    background:url('image/faq.jpg') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 190vh;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    z-index: -1;
+    opacity: 1;
+  }

@@ -1,0 +1,525 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* *************************************SECTION1****************************************************** */
+header::before {
+  background: url("image/BG1.jpg") no-repeat center center/cover;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.87;
+}
+
+/* styling for Navigation menu */
+.wrapper {
+  /* width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem; */
+    backdrop-filter: blur(10px);
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: rgb(255, 238, 0); */
+  padding: 1rem 1.5rem;
+  /* border-radius: 0.5rem; */
+}
+nav .logo {
+  font-family: 'Orbitron', sans-serif;
+letter-spacing: 2.5px;
+  /* font-weight: 700; */
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+nav a {
+  text-decoration: none;
+  color: rgb(255, 248, 248);
+}
+.menu a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.menu a:active {
+  color: #ff0000;
+}
+nav #toggle,
+nav label {
+  display: none;
+}
+/* ABOUT US AND CONTACT BUTTON */ /* ABOUT US AND CONTACT BUTTON */ /* ABOUT US AND CONTACT BUTTON */ /* ABOUT US AND CONTACT BUTTON */
+/* .Special_btn{
+  position: relative;
+  right: 5rem;
+} */
+/* ABOUT US AND CONTACT BUTTON */ /* ABOUT US AND CONTACT BUTTON */ /* ABOUT US AND CONTACT BUTTON */ /* ABOUT US AND CONTACT BUTTON */
+@media (max-width: 40.625em) {
+  nav .menu {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+  }
+  nav .button {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+  nav label {
+    display: inline-flex;
+    color: wheat;
+    cursor: pointer;
+  }
+  nav #toggle:checked ~ .menu {
+    height: 100%;
+  }
+}
+
+/* Styling for home page */
+
+.home h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.home p {
+  /* font-size: 24px; */
+  /* margin-bottom: 20px; */
+  /* color: white; */
+
+  font-size: 45px;
+  font-family: "Oswald", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-weight: 800;
+  /* font-family: 'Sono', sans-serif; */
+
+  /* margin-bottom: 20px; */
+  color: white;
+  width: 300px;
+  text-align: left;
+  position: relative;
+  left: 5rem;
+  top:  1rem;
+}
+
+.home button {
+  border: 2px solid white;
+
+  background-color: transparent;
+  /* border-radius: 5px; */
+  color: #000000;
+  font-size: 24px;
+  padding: 5px 20px;
+  /* transition: background-color 0.3s ease-in-out; */
+
+  /* 
+TO SWITCH POSTION */
+  position: relative;
+  left:  5rem;
+/* 
+ bottom: 1rem; */
+}
+
+.btn {
+  background: none;
+  border: 2px solid #000;
+  min-width: 200px;
+
+  cursor: pointer;
+  transition: color 0.4s linear;
+  position: relative;
+}
+.btn:hover {
+  color: #000000;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #f1f0f0;
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+/* .btn2 {
+  margin-left: 1rem;
+} */
+.btn1::before {
+  transform: scaleY(0);
+}
+.btn1:hover::before {
+  transform: scaleY(1);
+}
+/* .btn2::before {
+  transform: scaleY(0);
+}
+.btn2:hover::before {
+  transform: scaleY(1);
+} */
+
+.home button a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+
+  font-size: 2rem;
+}
+
+.home button:hover {
+  cursor: pointer;
+}
+
+/* .menu .button::before,
+.menu .button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.3s ease;
+}
+
+.menu .button:hover::before {
+  width: 100%;
+}
+.menu .button:hover::after {
+  left: 100%;
+  width:0;
+} */
+
+.home button a:hover {
+  color: black;
+}
+.button {
+  background-color: transparent;
+  font-family: 'Dosis', sans-serif;
+font-family: 'Roboto Condensed',sans-serif;
+  font-size: 15px;
+ 
+  border: none;
+  color: #fff;
+  font-weight: 400;
+}
+.button:hover {
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.18s ease-in-out;
+  color: rgba(29, 28, 28, 0.63);
+}
+
+/* *************************************SECTION2****************************************************** */
+section::before {
+  background: rgb(235, 235, 235) no-repeat center center/cover;
+  content: "";
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  width: 100%;
+  height: 130%;
+  z-index: -1;
+  opacity: 0.87;
+}
+.fame h2 {
+  position: relative;
+  font-size: 4rem;
+  /* bottom: 5.7rem; */
+  top: 4.5rem;
+  left: 2.4rem;
+  font-family: "Oswald", sans-serif;
+  margin-left: 2rem;
+  width: 50%;
+  /* display: inline-block; */
+}
+/* .fame h2:hover{
+
+  text-decoration: underline;
+  transition: underline 0.5s ease-in-out;
+} */
+
+.fame h2:before,
+.fame h2:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.3s ease;
+}
+
+.fame h2:hover:before {
+  width: 100%;
+}
+.fame h2:hover:after {
+  left: 100%;
+  width: 0;
+}
+
+/* 
+.fame img{
+  float: right;
+  height: 100vh;
+  /* width: 33.7vw;
+  aspect-ratio: 3/4;
+  position: relative;
+  bottom: 6.69rem;
+}    */
+
+/* PRofiles Editing */
+.ALLPROFILE {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+  /* gap: 2rem; */
+  position: relative;
+  /* top: 5rem; */
+  margin-left: 3.8rem;
+  top: 5rem;
+  /* bottom: 2rem; */
+}
+/* .firstPrize{
+  position: relative;
+  bottom:3rem;
+}
+.secondPrize{
+  position: relative;
+  top:3rem;
+}
+.thirdPrize{
+  position: relative;
+  top:3rem;
+} */
+
+.card {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  overflow: hidden;
+  width: 200px;
+  /* height: 325px; */
+  aspect-ratio: 1/1;
+}
+
+.card img {
+  width: 100%;
+  height: 100vh;
+  /* object-fit: cover; */
+  transition: transform 0.5s;
+}
+
+.card:hover img {
+  transform: scale(1.2);
+  filter: blur(3px);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.5s;
+}
+
+.card:hover .overlay {
+  transform: translateY(0);
+}
+
+.overlay h2 {
+  margin-top: 0;
+  color: white;
+}
+.overlay a {
+  text-decoration: none;
+  font-weight: 400;
+  color: white;
+}
+.overlay p {
+  margin-bottom: 0;
+}
+
+.fameINTRO p{
+  /* float: right;
+  position: relative;
+  margin-bottom: 5rem;
+  /* bottom: 10rem; */
+ /* right: 2.5rem;
+  text-align: left;
+  font-size: 1rem;
+  width: 65%; */
+
+
+
+      position: absolute;
+      float: right;
+    /* padding-bottom: 10rem; */
+ top: 45rem;
+ right: 5rem;
+
+ font-family: 'Dosis', sans-serif;
+ font-family: 'Dosis', sans-serif;
+ font-family: 'Roboto Condensed',sans-serif;
+    /* font-family: 'Courier New', Courier, monospace;
+    right: 2.5rem;
+    
+    font-weight: 500;
+    text-align:justify;
+    font-size: 1.25rem;*/
+    width: 65%; 
+
+
+      flex: 1 1 50%;
+      padding: 0 2rem;
+      text-align: justify;
+      font-size: 1.25rem;
+    
+}
+
+/* *************************************SECTION3****************************************************** */
+
+.contact::before {
+  background: rgb(104, 104, 104) no-repeat center center/cover;
+  content: "";
+  position: absolute;
+  top: 230vh;
+  left: 0;
+  width: 100%;
+  height: 38.3%;
+  z-index: -1;
+  /* opacity: 0.87; */
+}
+/* .contact h1 {
+  position: relative;
+
+  margin-left: 1.5rem;
+  color: white;
+  display: block;
+} */
+.links {
+  display: flex;
+  gap: 2rem;
+  position: relative;
+margin-top: 7.2rem;
+  top: 0.2rem;
+  margin-left: 27.8rem;
+}
+.links a {
+  width: 42px;
+  height: 42px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.links a .fa-brands {
+  font-size: 20px;
+  line-height: 45px;
+  /* z-index: 10; */
+  transition: color 0.5s;
+}
+
+.links a .fa-regular {
+  font-size: 20px;
+  line-height: 45px;
+  /* z-index: 10; */
+  transition: color 0.5s;
+}
+.links a::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -90px;
+  left: 0;
+  background: linear-gradient(-45deg, #ed1c94, #ffec17);
+  position: absolute;
+  transition: 0.5s;
+  z-index: -10;
+}
+.links a:hover::after {
+  top: 0;
+}
+.links a:hover .fa-brands {
+  color: white;
+}
+.links a:hover .fa-regular {
+  color: white;
+}
+.links a:hover {
+  transform: translateY(-5px);
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  top: 1rem;
+  /* specify a height for the container */
+  height: 110px;
+}
+
+.vertical-line {
+  width: 1px;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  /* top: 4.5rem; */
+  left: 50%;
+  transform: translateX(-50%);
+}
+.address a{
+  text-align: right;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  position: relative;
+  left: 51%;
+  bottom:  4.7rem;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.address a:hover{
+  text-decoration: underline;
+}
+.connection{
+  text-align: right;
+  position: absolute;
+  top: 92.4rem;
+  left: 34%;
+}
+.connection p{
+  position: relative;
+  
+  bottom: 0.6rem;
+}
+.connection h5{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
